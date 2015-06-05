@@ -7,6 +7,7 @@ namespace SwaggerDemoApi.Models
         protected override void Configure()
         {
             Mapper.CreateMap<PostSuperheroModel, Superhero>();
+            Mapper.CreateMap<PutSuperheroModel, Superhero>();
         }
     }
 }

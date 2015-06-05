@@ -68,12 +68,12 @@ namespace SwaggerDemoApi.Controllers
         }
 
         /// <summary>
-        /// Post superhero
+        /// Add new superhero
         /// </summary>
         /// <remarks>
-        /// Post a new superhero
+        /// Add a new superhero
         /// </remarks>
-        /// <param name="postSuperheroModel">Superhero to Post</param>
+        /// <param name="postSuperheroModel">Superhero to add</param>
         /// <returns></returns>
         /// <response code="201">Superhero created</response>
         [ResponseType(typeof(Superhero))]
@@ -93,6 +93,7 @@ namespace SwaggerDemoApi.Controllers
         /// </summary>
         /// <param name="putSuperheroModel">Superhero to update</param>
         /// <returns></returns>
+        /// <response code="200">Superhero updated</response>
         /// <response code="404">Superhero not found</response>
         [ResponseType(typeof(Superhero))]
         public HttpResponseMessage Put(PutSuperheroModel putSuperheroModel)
@@ -102,6 +103,8 @@ namespace SwaggerDemoApi.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Superhero not found");
 
             var superhero = Mapper.Map<Superhero>(putSuperheroModel);
+            Superheroes.Remove(existingSuperhero);
+            Superheroes.Add(superhero);
 
             return Request.CreateResponse(HttpStatusCode.OK, superhero);
         }
