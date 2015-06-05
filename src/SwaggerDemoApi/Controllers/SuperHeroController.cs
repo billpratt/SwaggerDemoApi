@@ -112,7 +112,10 @@ namespace SwaggerDemoApi.Controllers
         /// <summary>
         /// Delete a superhero
         /// </summary>
-        /// <param name="id"></param>
+        /// <remarks>
+        /// Delete a superhero
+        /// </remarks>
+        /// <param name="id">Id of the superhero to delete</param>
         /// <returns></returns>
         public HttpResponseMessage Delete(Guid id)
         {
