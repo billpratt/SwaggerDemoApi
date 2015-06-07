@@ -8,7 +8,7 @@ namespace SwaggerDemoApi.Models
     public class Superhero
     {
         /// <summary>
-        /// Guid id
+        /// Guid id of the superhero
         /// </summary>
         public Guid Id { get; set; }
         

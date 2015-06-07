@@ -13,6 +13,16 @@ namespace SwaggerDemoApi
         {
             var thisAssembly = typeof(SwaggerConfig).Assembly;
 
+            GlobalConfiguration.Configuration
+                .EnableSwagger(c =>
+                {
+                    c.SingleApiVersion("v1", "SwaggerDemoApi");
+                    c.IncludeXmlComments(string.Format(@"{0}\bin\SwaggerDemoApi.XML", System.AppDomain.CurrentDomain.BaseDirectory));
+                    c.DescribeAllEnumsAsStrings();
+                })
+                .EnableSwaggerUi();
+
+            /*
             GlobalConfiguration.Configuration 
                 .EnableSwagger(c =>
                     {
@@ -215,11 +225,7 @@ namespace SwaggerDemoApi
                         //
                         //c.EnableOAuth2Support("test-client-id", "test-realm", "Swagger UI");
                     });
-        }
-
-        protected static string GetXmlCommentsPath()
-        {
-            return System.String.Format(@"{0}\bin\SwaggerDemoApi.XML", System.AppDomain.CurrentDomain.BaseDirectory);
+             */
         }
     }
 }
