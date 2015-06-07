@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwaggerDemoApi", "SwaggerDemoApi\SwaggerDemoApi.csproj", "{E7CD6F38-0F98-4FA6-9350-291CA2483CCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwaggerDemoApi.ClientDemo", "SwaggerDemoApi.ClientDemo\SwaggerDemoApi.ClientDemo.csproj", "{4E5F6D90-5DB5-4354-ACED-4A53DB8860DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwaggerDemoApiClient", "SwaggerDemoApiClient\SwaggerDemoApiClient.csproj", "{B3DE96C5-27AA-420D-81CA-5A59E40D5C75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{E7CD6F38-0F98-4FA6-9350-291CA2483CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7CD6F38-0F98-4FA6-9350-291CA2483CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7CD6F38-0F98-4FA6-9350-291CA2483CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E5F6D90-5DB5-4354-ACED-4A53DB8860DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E5F6D90-5DB5-4354-ACED-4A53DB8860DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E5F6D90-5DB5-4354-ACED-4A53DB8860DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E5F6D90-5DB5-4354-ACED-4A53DB8860DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3DE96C5-27AA-420D-81CA-5A59E40D5C75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3DE96C5-27AA-420D-81CA-5A59E40D5C75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3DE96C5-27AA-420D-81CA-5A59E40D5C75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3DE96C5-27AA-420D-81CA-5A59E40D5C75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

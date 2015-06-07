@@ -58,7 +58,7 @@ namespace SwaggerDemoApi.Controllers
         /// <response code="200">Superhero found</response>
         /// <response code="404">Superhero not foundd</response>
         [ResponseType(typeof(Superhero))]
-        public HttpResponseMessage Get(Guid id)
+        public HttpResponseMessage GetById(Guid id)
         {
             var superhero = Superheroes.FirstOrDefault(c => c.Id == id);
 
